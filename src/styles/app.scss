@@ -25,15 +25,23 @@
     margin: 0;
     padding: 0;
 }
+.end{
+    &__big{
+        margin-bottom: 72px;
+    }
+    &__middle{
+        margin-bottom:51px;
+    }
+    
+}
 .title{
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 18px;
     &__big{
         font-size: 51px;
-        position: relative;
-        align-items: center;
     }
     &__middle{
         font-size: 36px;
@@ -68,20 +76,21 @@
     margin: 0;
     padding: 0;
 }
+
 .vignettes{
     &__el{
-        background-image: url(../assets/images/cadre.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
+        // background-image: url(../assets/images/cadre.svg);
+        // background-size:contain;
+        // background-repeat: no-repeat;
         list-style: none;
+        margin-bottom: 36px;
     }
-}
-.cadre__content{
-    margin-top: 50px;
 }
 
 .gif{
-    max-width: 50px;
+    max-width: 100px;
+    display: block;
+    margin: auto;
 }
 .slider{
 
@@ -107,6 +116,10 @@
 }
 .btn{
     max-width: 40px;
+}
+
+.projetlist{
+    list-style: none;
 }
 
 
