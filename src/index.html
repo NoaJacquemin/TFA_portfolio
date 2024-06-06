@@ -26,77 +26,79 @@
     <script src="scripts/app.js" defer></script>
   </head>
   <body class="body">
-    <header>
-      <nav>
-        <div class="logo"></div>
+    <header class="header">
+      <nav class="nav">
+        <!-- <div class="logo"><img src="assets/images/home.svg" alt="maison de style cottagecore en pixel art"></div> -->
         <ul class="menu__list">
-          <li class="menu__el menu__el--actif">
-              <a href="projet" target="_self">Accueil</a>
+          <li class="menu__el">
+              <a class="menu__el--link" href="index.html" target="_self">Accueil</a>
           </li>
           <li class="menu__el">
-              <a href="inspiration.html" target="_self">Compétences</a>
+              <a class="menu__el--link" href="#competences" target="_self">Compétences</a>
           </li>
           <li class="menu__el">
-              <a href="crédits.html" target="_self">Projets</a>
+              <a class="menu__el--link" href="#projets" target="_self">Projets</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <div>
         <img class="gif" src="assets/images/avatar.gif" alt="avatar représentant l'auteur en pixel art, mi vache mi femme">
         <h1 class="title title__big">Noa Jacquemin</h1>
         <p>Je suis étudiante en infographie option design web et dessinatrice à mes heures perdues.&nbsp;</p>
       </div>
       <div>
-        <h2 class="title">De la créativité à revendre</h2>
+        <h2 class="title title__middle">De la créativité à revendre</h2>
         <p>Actuellement en plein apprentissage, je développe mes compétences en design web et dans le reste de l’infographie en général. Je suis quelqu’un qui aimera toujours ajouter une touche de créativité personnelle à ses projets dans le but de les rendre uniques.&nbsp; </p>
       </div>
-      <div>
-        <h2 class="title">Mes compétences techniques</h2>
+      <div id="competences">
+        <h2 class="title title__middle">Mes compétences techniques</h2>
         <p>Je trouve mes forces dans les branches du développement artistique et conceptuel des projets. J’aime adapter des projets en fonction de l’utilisateur ou d’une direction artistique spécifique. La recherche d’inspiration est devenue presque quotidienne pour moi, surtout dans mes projets personnels.&nbsp; </p>
       </div>
       <div>
-        <ul>
-          <li>
-              <h3 class="title">La suite Adobe</h3>
+        <ul class="vignettes">
+          <li class="vignettes__el">
+            <div class="cadre__content">
+              <h3 class="title title__small">La suite Adobe</h3>
               <p>After effect, Illustrator, InDesign et Photoshop sont ceux que j’utilise le plus souvent pour créer différents assets.&nbsp;</p>
+            </div>
           </li>
-          <li>
-              <h3 class="title">Figma</h3>
+          <li class="vignettes__el">
+              <h3 class="title title__small">Figma</h3>
               <p>Pour réaliser mes moodboards lors de la recherche artistique, la création de wireframes et travailler le design de mes projets.&nbsp;</p>
           </li>
-          <li>
-            <h3 class="title">Ibis paint et Kryta</h3>
+          <li class="vignettes__el">
+            <h3 class="title title__small">Ibis paint et Kryta</h3>
             <p>Ce sont les logiciels de dessin que j’utilise, bien qu’un crayon, une gomme et un bout de nappe en papier me conviennent parfaitement aussi.&nbsp;</p>
           </li>
-          <li>
-            <h3 class="title">HTML/SCSS/JS</h3>
+          <li class="vignettes__el">
+            <h3 class="title title__small">HTML/SCSS/JS</h3>
             <p>Les différents types de langages que j’utilise pour mettre en forme mes sites web.&nbsp;</p>
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Mes projets web</h2>
+      <div id="projets">
+        <h2 class="title title__middle">Mes projets web</h2>
         <ul>
           <li>
-              <h3>Dataplay</h3>
+              <h3 class="title title__small">Dataplay</h3>
               <p>Nous avons réalisé une carte interactive associée à un système de filtres qui recense tous les ovnis aperçus en plus de 100 ans dans l’Union européenne. Le but était d’apprendre à manipuler une base de données JSON. Un atelier de deux semaines rempli de rires et de caféine.&nbsp; </p>
           </li>
           <li>
-              <h3>Rethinking UX</h3>
+              <h3 class="title title__small">Rethinking UX</h3>
               <p>Un travail de groupe visant à améliorer notre espace de travail scolaire. Le but était de présenter un projet adapté aux besoins des élèves et de le réaliser physiquement afin de l’installer en classe. Nous avons rapidement compris que nous n’étions pas des menuisiers professionnels.&nbsp;</p>
           </li>
           <li>
-            <h3>Décembre</h3>
+            <h3 class="title title__small">Décembre</h3>
             <p>La création d’une landing page sur un produit spécifique. Le but était de mettre ce produit en avant et de mettre en place une procédure d’achat en ligne via des formulaires.&nbsp;</p>
           </li>
         </ul>
       </div>
       <div>
-        <h2>Mes projets personnels</h2>
+        <h2 class="title title__middle">Mes projets personnels</h2>
         <div>
-          <h3>Deckbuilding</h3>
+          <h3 class="title title__small">Deckbuilding</h3>
           <p>Quelques illustrations réalisées pour un prototype de jeu de deckbuilding.&nbsp;</p>
           <div class="slider">
             <ul class="slider__controls">
