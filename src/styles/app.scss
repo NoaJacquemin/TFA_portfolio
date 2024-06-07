@@ -332,7 +332,6 @@
 
 @media (min-width: 600px){
     .body{
-        font-size: 20px;
         height: 100vh;
         overflow: hidden;
         overflow-y: scroll;
@@ -405,35 +404,82 @@
     }
 }
 
+@media (min-width: 1000px){
+    .body{
+        font-size: 20px;
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .main{
+        margin: 144px;
+        padding: 0;
+    }
+    .resize__para{
+        padding: 0 20%;
+        margin: 0;
+    }
+    .resize__gif{
+        max-width: 50%;
+    }
+    .vignettes{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, fr);
+        grid-template-rows: repeat(2, fr);
+        column-gap: 40px;
+        &__el{
+            border: var(--color-text) solid 2px;
+            padding: 5%;
 
-
-
-
-
-
-
-// .silkscreen-regular {
-//     font-family: "Silkscreen", sans-serif;
-//     font-weight: 400;
-//     font-style: normal;
-//   }
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 700
-
-// .pixelify-sans-<uniquifier> {
-//     font-family: "Pixelify Sans", sans-serif;
-//     font-optical-sizing: auto;
-//     font-weight: <weight>;
-//     font-style: normal;
-//   }
-
-// .archivo-<uniquifier> {
-//     font-family: "Archivo", sans-serif;
-//     font-optical-sizing: auto;
-//     font-weight: <weight>;
-//     font-style: normal;
-//     font-variation-settings:
-//       "wdth" 100;
-//   }
-  
+            &--un{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            &--deux{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            &--trois{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            &--quatres{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+        }
+    }
+    .end{
+        &__big{
+            margin-bottom: 80px;
+        }
+        &__middle{
+            margin-bottom: 57px;
+        }
+    }
+    .title{
+        &__big{
+            font-size: 57px;
+        }
+        &__middle{
+            font-size: 40px;
+        }
+        &__small{
+            font-size: 28px;
+        }
+    }
+    .menu{
+        &__el{
+            font-size: 20px;
+        }
+    }
+    .slider{
+        &__img{
+            max-width: 400px;
+        }
+    }
+    .btn{
+        width: 70px;
+    }
+}
