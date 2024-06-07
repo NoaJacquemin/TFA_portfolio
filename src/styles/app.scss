@@ -22,7 +22,7 @@
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
     padding: 0;
-    margin:100px 0 0;
+    margin:100px 0 0 0;
     cursor: none;
     height: 100vh;
     overflow: hidden;
@@ -479,6 +479,108 @@
             & img{
                 width: 70px;
             }
+        }
+    }
+    .link{
+        &:hover{
+            font-size: 34px;
+        }
+    }
+}
+
+@media (min-width: 1400px){
+    .body{
+        font-size: 22px;
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .main{
+        margin: 248px;
+        padding: 0;
+    }
+    .resize__para{
+        padding: 0 25%;
+        margin: 0;
+    }
+    .resize__gif{
+        max-width: 40%;
+    }
+    .vignettes{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, fr);
+        grid-template-rows: repeat(2, fr);
+        column-gap: 40px;
+        &__el{
+            border: var(--color-text) solid 2px;
+            padding: 5% 10%;
+
+            &--un{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            &--deux{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            &--trois{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            &--quatres{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+        }
+    }
+    .end{
+        &__big{
+            margin-bottom: 88px;
+        }
+        &__middle{
+            margin-bottom: 62px;
+        }
+    }
+    .title{
+        &__big{
+            font-size: 62px;
+        }
+        &__middle{
+            font-size: 44px;
+        }
+        &__small{
+            font-size: 31px;
+        }
+    }
+    .menu{
+        &__el{
+            font-size: 22px;
+        }
+    }
+    .slider{
+        &__img{
+            max-width: 450px;
+        }
+    }
+    .btn{
+        width: 70px;
+    }
+    .logo{
+        &__style{
+            & img{
+                width: 75px;
+            }
+        }
+    }
+    .link{
+        &:hover{
+            font-size: 36px;
+        }
+    }
+    .animgif{
+        &__resize{
+            max-width: 60%;
         }
     }
 }
