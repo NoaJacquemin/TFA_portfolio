@@ -134,15 +134,12 @@
     padding: 0;
 }
 
-// .vignettes{
-//     &__el{
-//         // background-image: url(../assets/images/cadre.svg);
-//         // background-size:contain;
-//         // background-repeat: no-repeat;
-//         list-style: none;
-//         margin-bottom: 36px;
-//     }
-// }
+.vignettes{
+    &__el{
+        list-style: none;
+        margin-bottom: 36px;
+    }
+}
 .gif{
     max-width: 100px;
     display: block;
