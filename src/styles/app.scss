@@ -22,7 +22,7 @@
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
     padding: 0;
-    margin: 0;
+    margin:100px 0 0;
     cursor: none;
     height: 100vh;
     overflow: hidden;
@@ -104,12 +104,12 @@
     }
 }
 .menu{
-
     &__list{
         list-style: none;
         display: flex;
         justify-content: center;
         padding: 0;
+        max-width: 100%;
     }
     &__el{
         flex-direction: row;
@@ -124,16 +124,38 @@
             cursor: none;
             &:hover{
                 color: var(--color-primary);
-                font-size: 20px;
             }
         }
     }
 }
+.header{
+    background-color: var(--color-bg);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 .nav{
     margin: 0;
-    padding: 0;
+    padding: 10px 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &--hide{
+        display: none;
+    }
 }
-
+.logo{
+    &__style{
+        & img{
+            width: 50px;
+            align-self: flex-start;
+            cursor: none;
+        }
+        
+    }
+}
 .vignettes{
     &__el{
         list-style: none;
@@ -196,6 +218,22 @@
 .projetlist{
     list-style: none;
 }
+.arrow{
+    width: 32px;
+    &:hover{
+        animation: ArrowTurn 1s;
+    }
+    
+}
+
+@keyframes ArrowTurn{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 .animgif{
     width: 100%;
     display: block;
@@ -241,6 +279,7 @@
     }
     &__link{
         text-decoration: none;
+        text-decoration: underline;
         color: var(--color-footer);
         &:hover{
             color: var(--color-text);
@@ -260,13 +299,56 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     &__el{
         width: 100%;
     }
     & img{
         width: 50%;
+        display: block;
+        margin: auto;
+        &:hover{
+            animation: BtnScale 1s;
+        }
+    }
+    & a{
+        &:hover{
+            cursor: none;
+        }
     }
 }
+
+@media (min-width: 660px){
+    .main{
+        margin: 36px;
+        padding: 0;
+    }
+    .menu{
+
+        &__list{
+            justify-content: right;
+            padding: 0;
+        }
+        &__el{
+            flex-direction: row;
+            font-size: 25px;
+            margin: 0 10px;
+           
+    
+            &--link{
+                text-decoration: none;
+                font-weight: 600;
+                color: var(--color-link);
+                cursor: none;
+                &:hover{
+                    color: var(--color-primary);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
 
 
 

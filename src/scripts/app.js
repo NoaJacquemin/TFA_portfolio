@@ -53,3 +53,17 @@ document.addEventListener('click',()=>{
     }, 500)
 })
 
+//Sticky nav
+let oldScrollY = 0;
+const menu = document.querySelector(".nav");
+
+window.addEventListener("scroll", scrollListener);
+function scrollListener(){
+    if(oldScrollY > window.scrollY){ //vers le haut
+        menu.classList.remove("nav--hide");
+    }else{ //vers le bas
+        menu.classList.add("nav--hide");
+    }
+    //chaque fois que je scroll, je met à jour cette variable là
+    oldScrollY = window.scrollY;
+}
