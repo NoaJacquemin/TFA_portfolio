@@ -426,15 +426,9 @@
         
     }
     .sources{
-        list-style: none;
-        max-width: 100%;
-        padding: 0;
-        &__el{
-            border: var(--color-text) solid 2px;
-            padding: 5% 10%;
-            margin-bottom: 25px;
-        }
-        
+        border: var(--color-text) solid 2px;
+        padding: 5% 10%;
+        margin-bottom: 25px;
     }
 }
 
