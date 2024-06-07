@@ -36,3 +36,18 @@ function nextSlide(){
     activeSlideEl.classList.remove("slider__el--show");
     nextSlideEl.classList.add("slider__el--show");
 }
+
+//cursor
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e =>{
+    cursor.setAttribute('style', 'top:'+(e.pageY - 15)+"px; left:"+(e.pageX - 15)+"px;")
+})
+
+document.addEventListener('click',()=>{
+    cursor.classList.add('expand');
+
+    setTimeout(()=>{
+        cursor.classList.remove("expand");
+    }, 500)
+})
