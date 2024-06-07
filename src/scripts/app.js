@@ -9,6 +9,7 @@ nextButton.addEventListener("click", nextSlide);
 
 
 document.addEventListener("keydown", keyboardListener);
+
 function keyboardListener(event){
     if(event.code == "ArrowLeft"){
         prevSlide();
@@ -51,3 +52,4 @@ document.addEventListener('click',()=>{
         cursor.classList.remove("expand");
     }, 500)
 })
+
