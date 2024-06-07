@@ -13,7 +13,10 @@
     --color-cursor:#031d14;
     --color-footer:#031d14;
 } 
-
+//debug le curseur pages intermédiaires
+.none{
+    display: none;
+}
 .body{
     // background-color: var(--color-bg);
     background-image: url(../assets/images/pave.svg);
@@ -330,6 +333,18 @@
     }
 }
 
+.criteres{
+    list-style: none;
+    max-width: 100%;
+    padding: 0;
+    &__el{
+        border: var(--color-text) solid 2px;
+        padding: 5%;
+        margin-bottom: 25px;
+    }
+    
+}
+
 @media (min-width: 600px){
     .body{
         height: 100vh;
@@ -391,8 +406,19 @@
 
 @media (min-width: 800px){
     .main{
-        margin: 144px;
+        margin: 153px;
         padding: 0;
+    }
+    .criteres{
+        list-style: none;
+        max-width: 100%;
+        padding: 0;
+        &__el{
+            border: var(--color-text) solid 2px;
+            padding: 5% 10%;
+            margin-bottom: 25px;
+        }
+        
     }
 }
 
