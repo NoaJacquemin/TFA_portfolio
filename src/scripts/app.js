@@ -38,7 +38,7 @@ function nextSlide(){
     nextSlideEl.classList.add("slider__el--show");
 }
 
-//cursor
+//cursor tuto youtube > web school
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e =>{
@@ -59,11 +59,10 @@ const menu = document.querySelector(".nav");
 
 window.addEventListener("scroll", scrollListener);
 function scrollListener(){
-    if(oldScrollY > window.scrollY){ //vers le haut
+    if(oldScrollY > window.scrollY){ 
         menu.classList.remove("nav--hide");
-    }else{ //vers le bas
+    }else{ 
         menu.classList.add("nav--hide");
     }
-    //chaque fois que je scroll, je met à jour cette variable là
     oldScrollY = window.scrollY;
 }
